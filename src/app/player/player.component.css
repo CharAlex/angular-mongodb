@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(231, 59, 59);
+}
+#hrList{
+    -webkit-margin-end:80%;
+    border-width: 2px;
+}
+.column{
+    float: left;
+    width: 50%;
+    min-width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.dark{
+    background: #fafafa;
+    padding: 25px;
+}
+.light{
+    padding: 25px;
+}
+h2{
+    text-align: center;
+}
+
+.submit {
+    background-color: #4CAF50;; /* Green */
+    border: 2px solid white;
+    color: white;
+    padding: 15px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-left: auto;      margin-right: auto;      width: 10em;      margin-bottom: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.02)
+}
+.detail {
+    background-color: rgba(0, 174, 255, 0.5);; /* Green */
+    border: 1px solid white;
+    color: white;
+    padding: 10px ; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.02)
+}
+.delete {
+    background-color: rgb(243, 16, 16); /* Green */
+    border: 1px solid white;
+    color: white;
+    float: right;
+    margin-left: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.04)
+}
+#listButtons{
+    float: right;
+}
+.inline{
+    display: inline-block;
+}
+.cardboard{
+  border: 2px solid #ededed;  
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px; margin-right:10%;
+  box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.2), 0 43px 20px 0 rgba(0, 0, 0, 0.04);
+  height: 350px;
+  overflow: auto;
+}
+.centerList{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em
+}
+#footballImage{
+    height: 135px;
+    width: 135px;
+    opacity: 0.2;
+}
+.row{
+    background-color: rgb(240, 240, 240);
+    border-radius: 16px;
+    margin: 16px;
+    padding: 16px;
+}

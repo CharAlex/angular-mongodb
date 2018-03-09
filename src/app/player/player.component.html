@@ -1,0 +1,71 @@
+<!-- style="text-align:center" -->
+<div class="row">
+  <!--Player Column!-->
+  <div class = "column">
+    <div class="cardboard" style="margin-bottom:5px">
+    <h2>Please add a player: </h2>
+    <div class = centerList>
+      <div>
+        <h3>Name: <input [(ngModel)]="name" placeholder="name"> </h3>
+      </div>
+      <div>
+          <h3>Price: <input [(ngModel)]="price" placeholder="price"></h3>    
+      </div>
+      <div>
+        <h3>Team: <input [(ngModel)]="teamName" placeholder="team"></h3>    
+    </div>
+      <button class = "submit" (click)="onSubmit()">Submit</button>
+  </div>
+  </div>
+  </div>
+<!--Team Column!-->
+<div class = "column">
+    <div class="cardboard" style="margin-bottom:5px;">
+      <h2>Please add a team: </h2>
+      <div class = centerList>
+      <div>
+        <div>
+          <h3>Name: <input  [(ngModel)]="footballTeam.name" placeholder="name"> </h3>
+        </div>
+        <img id="footballImage" src="..\assets\football.png" alt="football"/>
+        <button class = "submit" (click)="onSubmitTeam()">Submit Team</button>
+      </div>
+    </div>
+      </div>
+    </div>
+</div>
+<hr>
+<div class=row>
+  <div class = column>
+  <h2>List of players</h2>
+  <div class="cardboard">
+    <div *ngFor="let player of team" >
+      <div [ngClass]="lightOrDark(player.id)">
+      {{player.name}}  
+      <button class="delete" (click)="deletePlayer(player.id)">x</button> 
+    </div>
+    </div> 
+  </div>
+  </div>
+  <div class = "column">
+  <h2>List of teams</h2>
+  <div class="cardboard">
+      <div *ngFor="let team of tm">
+          <div [ngClass]="lightOrDark(team.id)">
+            {{team.name}}  
+            <button class="delete" (click)="deleteTeam(team.id)">x</button> 
+            <button class = "detail" (click)="teamDetails(team.name)">Details</button> 
+          </div>
+          
+      </div>
+  </div>
+</div>
+
+</div>
+<hr>
+
+<h2>Details</h2>
+<ul>
+    <li *ngFor="let player of details" >{{player.name}}
+      <hr id='hrList'> </li> 
+  </ul>
